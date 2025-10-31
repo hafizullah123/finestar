@@ -1,0 +1,93 @@
+<section class="py-4 overflow-hidden">
+  <div class="w-full relative">
+    <div
+      class="flex animate-slide-left nuts-track whitespace-nowrap animate-scroll"
+    >
+      <!-- Original nuts -->
+      <div class="inline-block w-32 transform -translate-y-0">
+        <img
+          src="dryfruitspng/almond1.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-6">
+        <img
+          src="dryfruitspng/almond2.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-3">
+        <img src="dryfruitspng/cashew.png" class="w-full h-36 object-contain" />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-8">
+        <img
+          src="dryfruitspng/walnut1.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-2">
+        <img
+          src="dryfruitspng/walnut2.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+
+      <!-- Duplicate the same nuts to allow seamless scroll -->
+      <div class="inline-block w-32 transform -translate-y-0">
+        <img
+          src="dryfruitspng/almond1.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-6">
+        <img
+          src="dryfruitspng/almond2.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-3">
+        <img src="dryfruitspng/cashew.png" class="w-full h-36 object-contain" />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-8">
+        <img
+          src="dryfruitspng/walnut1.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+      <div class="inline-block w-32 transform -translate-y-2">
+        <img
+          src="dryfruitspng/walnut2.png"
+          class="w-full h-36 object-contain"
+        />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .animate-slide-left {
+      animation: slide-left 40s linear infinite;
+    }
+
+    .animate-slide-right {
+      animation: slide-right 40s linear infinite;
+    }
+  </style>
+</section>
