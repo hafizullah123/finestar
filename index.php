@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nut Collection</title>
+    <title>fruits </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -36,12 +36,12 @@
         document.getElementById(id).innerHTML = html;
       }
 
-      loadSection("navbar", "navbar.html");
-      loadSection("hero", "hero.html");
-      loadSection("info", "info.html");
-      loadSection("story", "story.html");
-      loadSection("customer", "customer.html");
-      loadSection("footer", "footer.html");
+      loadSection("navbar", "navbar.php");
+      loadSection("hero", "hero.php");
+      loadSection("info", "info.php");
+      loadSection("story", "story.php");
+      loadSection("customer", "customer.php");
+      loadSection("footer", "footer.php");
     </script>
   </body>
 </html>
