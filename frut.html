@@ -367,53 +367,57 @@
       </div>
     </section>
 
-    <!-- ✅ Our Brief Story Section (Styled with Radius, Padding, and Margin) -->
-    <section class="py-0 overflow-visible">
-      <div
-        class="container mx-auto px-6 md:px-6 flex flex-col md:flex-row items-stretch gap-0 rounded-2xl max-w-6xl overflow-visible"
-      >
-        <!-- 🟢 Left Column: Text + Bottom Image -->
-        <div class="md:w-1/2 flex flex-col justify-between">
-          <!-- Text -->
-          <div class="p-2 rounded-xl h-full">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-              Our Brief Story
-            </h1>
-            <p class="text-lg leading-relaxed">
-              Since our inception, we have been passionate about providing the
-              finest quality nuts. From almonds to cashews, each product is
-              carefully selected and handled with love to ensure freshness and
-              taste. Our journey has always been about dedication, quality, and
-              building trust with our customers.
-            </p>
-          </div>
+<!-- ✅ Our Brief Story Section (With gap-3 between items) -->
+<section class="max-w-6xl mx-auto py-0 px-4 rounded-lg">
+  <!-- Title -->
+  <h1 class="text-4xl font-extrabold mb-6 text-center md:text-left pl-52">
+    Our Brief Story
+  </h1>
 
-          <!-- Bottom Image under text (fixed height, responsive) -->
-          <div class="mt-2">
-            <img
-              src="dryfruitspng/image 3.png"
-              alt="Story Image"
-              class="w-full h-[260px] md:h-[300px] object-cover rounded-2xl"
-            />
-          </div>
-        </div>
-
-        <!-- 🟣 Right Column: Vertical Image (same visual height as left column) -->
-        <div class="md:w-1/2 flex justify-center items-stretch mt-12">
-          <img
-            src="dryfruitspng/image 2.png"
-            alt="Y-axis Image"
-            class="object-cover rounded-2xl shadow-md w-full h-[500px] max-w-[500px]"
-          />
-        </div>
+  <!-- Content Row -->
+  <div class="flex flex-col md:flex-row items-center justify-center gap-3">
+    <!-- Left Column: Text + Image -->
+    <div class="w-96 h-[400px] flex flex-col justify-between gap-3">
+      <!-- Text -->
+      <div>
+        <p class="text-gray-700 text-justify leading-snug">
+          Since our inception, we have been passionate about providing the finest
+          quality nuts. From almonds to cashews, each product is carefully selected
+          and handled with love to ensure freshness and taste. Our journey has
+          always been about dedication, quality, and building trust with our customers.
+          Our journey has
+          always been about dedication, quality, and building trust with our customers.
+        </p>
       </div>
-    </section>
+
+      <!-- Bottom Image -->
+      <div class="w-96 h-[200px] flex justify-center items-center">
+        <img
+          src="dryfruitspng/image 3.png"
+          alt="Story Image"
+          class="rounded-lg shadow-md w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    <!-- Right Column: Vertical Image -->
+    <div class="w-80 h-[400px] flex justify-center items-center">
+      <img
+        src="dryfruitspng/image 2.png"
+        alt="Vertical Image"
+        class="rounded-lg shadow-md w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+
 
     <!-- ✅ Customer Stories Section (Seamless Loop Version) -->
     <section class=" overflow-visible pb-4 md:pb-20">
       <div class="container mx-auto px-0">
         <h2
-          class="text-4xl font-extrabold text-gray-900 mb-4 text-left p-4 ml-20"
+          class="text-4xl font-extrabold mb-4 text-left p-4 pl-[270px]"
         >
           Customers Stories
         </h2>
@@ -850,39 +854,28 @@
   </div>
 </section>
 
-<!-- sertificate section -->
-<section class="py-12 p-0 m-0">
+<section class="py-8 relative overflow-visible w-full">
   <h2 class="text-xl md:text-2xl font-bold mb-10 tracking-wide pl-16">
     QUALITY CONTROL & CERTIFICATION
   </h2>
 
-  <div class="flex flex-col md:flex-row items-center justify-between w-full overflow-visible">
-    <!-- Left image (touches left edge) -->
-    <div class="w-24 md:w-40 rotate-[180deg]">
-      <img 
-        src="dryfruitspng/side_screen_image.png"
-        alt="Left decoration"
-        class="w-screen h-auto "
-      />
+  <div class="relative flex items-center justify-center w-full overflow-visible">
+
+    <!-- Left image -->
+    <div class="absolute left-[-50px] top-1/2 -translate-y-1/2">
+      <img src="dryfruitspng/side_screen_image.png" class="h-auto md:h-96 lg:h-[28rem] w-auto rotate-180"/>
     </div>
 
     <!-- Center certificate -->
-    <div class="w-64 md:w-96 mx-auto">
-      <img 
-        src="dryfruitspng/c1.jpg"
-        alt="Certificate"
-        class="rounded-lg  object-contain w-full h-auto"
-      />
+    <div class="z-10 w-64 md:w-96 mx-auto">
+      <img src="dryfruitspng/c2.avif" class="rounded-lg object-contain w-full h-auto shadow-lg"/>
     </div>
 
-    <!-- Right image (touches right edge) -->
-    <div class="w-24 md:w-40 rotate-[1deg]">
-      <img 
-        src="dryfruitspng/side_screen_image.png"
-        alt="Right decoration"
-        class="w-screen h-auto"
-      />
+    <!-- Right image -->
+    <div class="absolute right-[-50px] top-1/2 -translate-y-1/2">
+      <img src="dryfruitspng/side_screen_image.png" class="h-auto md:h-96 lg:h-[28rem] w-auto"/>
     </div>
+
   </div>
 </section>
 
