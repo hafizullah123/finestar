@@ -315,94 +315,155 @@ dots.forEach((dot, i) => {
 showSlide(currentIndex);
 </script>
 
-
-
-
-
-
-
-
-
-
-
-    
-
     <!--  crousel section  -->
       
-    <section class="py-0 overflow-visible">
-      <!-- center wrapper -->
-      <div class="w-full relative flex justify-center">
-        <!-- limit width and center carousel track -->
-        <div class="w-full max-w-4xl overflow-visible">
-          <div
-            class="flex animate-slide-left nuts-track whitespace-nowrap animate-scroll items-center justify-center"
-          >
-           <!-- Original nuts -->
-           <div class="inline-block w-36 transform -translate-y-0">
-             <img
-               src="dryfruitspng/almond1.png"
-               class="w-full h-36 object-contain"
-             />
-           </div>
-           <div class="inline-block w-32 transform -translate-y-12">
-             <img
-               src="dryfruitspng/almond2.png"
-               class="w-full h-36 object-contain"
-             />
-           </div>
-           <div class="inline-block w-32 transform -translate-y-6">
-             <img
-               src="dryfruitspng/cashew.png"
-               class="w-full h-36 object-contain"
-             />
-           </div>
-           <div class="inline-block w-36 transform -translate-y-16">
-             <img
-               src="dryfruitspng/walnut1.png"
-               class="w-full h-36 object-contain"
-             />
-           </div>
-           <div class="inline-block w-36 transform -translate-y-4">
-             <img
-               src="dryfruitspng/walnut2.png"
-               class="w-full h-36 object-contain"
-             />
-           </div>
+    <section class="w-full bg-white overflow-hidden">
+  <div
+    class="slider relative flex items-center overflow-hidden w-screen h-[210px] mx-auto py-6"
+  >
+    <!-- Moving Wrapper -->
+    <div class="animate-scroll flex">
+      <!-- Track 1 -->
+      <div class="track flex items-center gap-8">
+        <!-- Each circular item -->
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/almond1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="almond1"
+          />
+        </div>
 
-          <!-- Duplicate the same nuts to allow seamless scroll -->
-          <div class="inline-block w-36 transform -translate-y-0">
-            <img
-              src="dryfruitspng/almond1.png"
-              class="w-full h-36 object-contain"
-            />
-          </div>
-          <div class="inline-block w-36 transform -translate-y-12">
-            <img
-              src="dryfruitspng/almond2.png"
-              class="w-full h-36 object-contain"
-            />
-          </div>
-          <div class="inline-block w-36 transform -translate-y-6">
-            <img
-              src="dryfruitspng/cashew.png"
-              class="w-full h-36 object-contain"
-            />
-          </div>
-          <div class="inline-block w-36 transform -translate-y-16">
-            <img
-              src="dryfruitspng/walnut1.png"
-              class="w-full h-36 object-contain"
-            />
-          </div>
-          <div class="inline-block w-36 transform -translate-y-4">
-            <img
-              src="dryfruitspng/walnut2.png"
-              class="w-full h-36 object-contain"
-            />
-          </div>
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/cashew.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="cashew"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/walnut1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="walnut"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/Hazelnut.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="hazelnut"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/almond2.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="almond2"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/almond2.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="almond2"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/walnut1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="walnut"
+          />
+        </div>
+
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+         <img
+            src="dryfruitspng/walnut1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="walnut"
+          />
+        </div>
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/almond1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="almond1"
+          />
+        </div>
+        <div class="w-[120px] h-[120px] flex items-center justify-center">
+          <img
+            src="dryfruitspng/almond1.png"
+            class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+            alt="almond1"
+          />
         </div>
       </div>
-    </section>
+
+      <!-- Duplicate Track (for seamless loop) -->
+      <div class="track flex items-center gap-8" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <style>
+    /* Continuous horizontal scroll */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    .animate-scroll {
+      animation: scroll 25s linear infinite;
+    }
+
+    /* Zigzag floating motion */
+    @keyframes float {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-10px);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+      75% {
+        transform: translateY(-6px);
+      }
+    }
+    .animate-float {
+      animation: float 3.5s ease-in-out infinite;
+    }
+
+    /* Adjust scroll speed for smaller screens */
+    @media (max-width: 640px) {
+      .animate-scroll {
+        animation-duration: 16s;
+      }
+    }
+  </style>
+
+  <script>
+    // Duplicate track for seamless continuous scroll
+    const [track1, track2] = document.querySelectorAll(".track");
+    track2.innerHTML = track1.innerHTML;
+
+    // Add staggered float delay for natural zigzag motion
+    document.querySelectorAll(".animate-float").forEach((el, i) => {
+      el.style.animationDelay = `${i * 0.4}s`;
+    });
+  </script>
+</section>
+
 
 <!-- ✅ Our Brief Story Section (With gap-3 between items) -->
 <section class="max-w-6xl mx-auto py-0 px-4 rounded-lg">

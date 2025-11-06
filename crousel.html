@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Smooth Zigzag Circular Slider</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* Smooth horizontal scroll */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .animate-scroll {
+        display: flex;
+        animation: scroll 25s linear infinite;
+      }
+
+      /* Smooth floating (zigzag up-down motion) */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(-10px);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+        75% {
+          transform: translateY(-6px);
+        }
+      }
+
+      .animate-float {
+        animation: float 3.5s ease-in-out infinite;
+      }
+
+      /* Adjust scroll speed for smaller screens */
+      @media (max-width: 640px) {
+        .animate-scroll {
+          animation-duration: 16s;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="font-sans m-0 bg-white">
+    <main>
+      <div
+        class="slider relative flex items-center overflow-hidden w-screen h-[210px] mx-auto py-6"
+      >
+        <!-- Moving Wrapper -->
+        <div class="animate-scroll">
+          <!-- Track 1 -->
+          <div class="track flex items-center gap-8">
+            <!-- Each circular item -->
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/almond1.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/cashew.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/walnut1.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/Hazelnut.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/almond2.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/Hazelnut.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/Hazelnut.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+            <div class="w-[120px] h-[120px] flex items-center justify-center">
+              <img
+                src="dryfruitspng/Hazelnut.png"
+                class="w-[100px] h-[100px] object-contain animate-float select-none pointer-events-none"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Duplicate Track (for seamless loop) -->
+          <div class="track flex items-center gap-8" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <script>
+        // Duplicate Track 1 content for continuous loop
+        const track1 = document.querySelectorAll(".track")[0];
+        const track2 = document.querySelectorAll(".track")[1];
+        track2.innerHTML = track1.innerHTML;
+
+        // Apply staggered float delays for natural motion
+        document.querySelectorAll(".animate-float").forEach((el, i) => {
+          el.style.animationDelay = `${i * 0.4}s`;
+        });
+      </script>
+    </main>
+  </body>
+</html>

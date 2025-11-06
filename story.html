@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Stories Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Infinite Carousel Animations */
+      @keyframes slide-left {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes slide-right {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .animate-slide-left {
+        animation: slide-left 40s linear infinite;
+      }
+      .animate-slide-right {
+        animation: slide-right 40s linear infinite;
+      }
+
+      /* Limit text to 3 lines */
+      .three-line-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <!-- Customer Stories Section -->
+    <section class="overflow-visible py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-extrabold mb-12 text-center">
+          Customer Stories
+        </h2>
+
+        <!-- Top Row (Scroll Right) -->
+        <div class="overflow-hidden mb-8 relative">
+          <div class="flex gap-8 animate-slide-right whitespace-nowrap">
+            <!-- Box Template -->
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 4.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/cashew.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 8.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/almond1.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 7.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/walnut1.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <!-- Duplicate for seamless scroll -->
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 4.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/cashew.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row (Scroll Left) -->
+        <div class="overflow-hidden relative">
+          <div class="flex gap-8 animate-slide-left whitespace-nowrap">
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 6.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/walnut2.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 5.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/hazelnut.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 4.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/cashew.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+
+            <!-- Duplicate for seamless scroll -->
+            <div
+              class="w-96 h-60 rounded-2xl flex flex-col justify-center text-center p-6 flex-shrink-0 relative"
+              style="background-color: #78866b"
+            >
+              <img
+                src="dryfruitspng/image 6.png"
+                alt="Customer"
+                class="absolute top-2 left-2 w-20 h-20 rounded-full"
+              />
+              <img
+                src="dryfruitspng/walnut2.png"
+                alt="Product"
+                class="absolute top-2 right-2 w-20 h-20"
+              />
+              <p
+                class="text-white text-base leading-6 px-4 py-2 text-center three-line-text"
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
