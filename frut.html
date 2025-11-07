@@ -511,360 +511,208 @@ showSlide(currentIndex);
 
 
 
-    <!-- ✅ Customer Stories Section (Seamless Loop Version) -->
-    <section class=" overflow-visible pb-4 md:pb-20">
-      <div class="container mx-auto px-0">
-        <h2
-          class="text-4xl font-extrabold mb-4 text-left p-4 pl-[270px]"
-        >
-          Customers Stories
-        </h2>
+    <section class="py-16 px-4 md:px-10 relative overflow-visible">
+  <h2 class="text-3xl font-bold mb-10 ">
+    COSTOMER STORIES
+  </h2>
 
-        <!-- 🟢 Top Row Carousel (Left ➡ Right) -->
-        <div class="overflow-visible relative mb-12">
-          <div class="flex gap-8 animate-slide-right whitespace-nowrap">
-            <!-- Original Items -->
-             
-            <div
-              class="w-96 h-60 rounded-2xl p-2 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 4.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/cashew.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white break-words text-base leading-relaxed p-4 overflow-visible">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+  <style>
+    /* Box styling for this section only */
+    .loop-box-section .box {
+      width: 24rem;
+      height: 14rem;
+      flex-shrink: 0;
+      position: relative;
+      border-radius: 1rem;
+      padding: 0rem;
+      overflow: visible;
+      background-color: rgba(43, 67, 28, 0.6); /* semi-transparent dark background */
+      color: white;
+      box-shadow: 0 4px 10px rgba(29, 43, 28, 0.4); /* subtle shadow for visibility */
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-2 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 8.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/almond1.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .box img.customer {
+      position: absolute;
+      top: -40px;
+      left: 15px;
+      width: 80px;
+      height: 80px;
+      border-radius: 9999px;
+      z-index: 20;
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 7.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/walnut1.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .box img.product {
+      position: absolute;
+      top: -40px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      z-index: 20;
+    }
 
-            <!-- 🔁 Duplicate Items for Loop -->
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 4.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/cashew.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .box p {
+      margin-top: 1.5rem;
+      line-height: 1.5rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      overflow-wrap: break-word;
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 8.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/almond1.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .scroll-track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 7.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/walnut1.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
-          </div>
-        </div>
+    .loop-box-section .scroll-container {
+      position: relative;
+      overflow: visible;
+    }
 
-        <!-- 🟣 Bottom Row Carousel (Right ➡ Left) -->
-        <div class="overflow-visible relative">
-          <div class="flex gap-8 animate-slide-left whitespace-nowrap">
-            <!-- Original + Duplicate Items -->
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative overflow-visible break-words"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 6.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/walnut2.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative overflow-visible break-words"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 5.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/hazelnut.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    @keyframes scroll-right {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative break-words overflow-visible"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 4.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/cashew.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .animate-left {
+      animation: scroll-left 40s linear infinite;
+    }
 
-            <!-- Duplicate for infinite scroll -->
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative break-words overflow-visible"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 6.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/walnut2.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    .loop-box-section .animate-right {
+      animation: scroll-right 40s linear infinite;
+    }
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative break-words overflow-visible"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 5.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/hazelnut.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
+    /* Keep distance between top and bottom rows */
+    .bottom-row {
+      margin-top: 4rem; /* positive margin to separate from top row */
+    }
+  </style>
 
-            <div
-              class="w-96 h-60 rounded-2xl p-6 flex-shrink-0 relative break-words overflow-visible"
-              style="background-color: #78866b"
-            >
-              <div class="absolute top-4 left-4">
-                <img
-                  src="dryfruitspng/image 4.png"
-                  alt="Customer"
-                  class="w-20 h-20 rounded-full"
-                />
-              </div>
-              <div class="absolute top-4 right-4">
-                <img
-                  src="dryfruitspng/cashew.png"
-                  alt="Product"
-                  class="w-20 h-20"
-                />
-              </div>
-              <p class="text-white mt-20 text-base leading-relaxed break-words">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry.
-              </p>
-            </div>
-          </div>
-        </div>
+  <!-- Top Row: Left → Right -->
+  <div class="scroll-container loop-box-section mb-4">
+    <div class="scroll-track animate-left">
+      <div class="box">
+        <img src="dryfruitspng/image 4.png" class="customer" />
+        <img src="dryfruitspng/cashew.png" class="product" />
+<h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>Lorem Ipsum dummy text for printing industry. Lorem Ipsum dummy text for printing industry. Lorem Ipsum dummy text for printing industry.</p>
       </div>
-    </section>
+      <div class="box">
+        <img src="dryfruitspng/image 5.png" class="customer" />
+        <img src="dryfruitspng/almond2.png" class="product" />
+       <h1 class="pt-12 pl-4 mb-0 text-2xl">
+  Name
+</h1>
 
-    <!-- ✅ Infinite Carousel Animations -->
-    <style>
-      @keyframes slide-left {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
+        <p>Another customer-product example text. Lorem Ipsum dummy text for printing industry.Lorem Ipsum dummy text for printing industry.</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 6.png" class="customer" />
+        <img src="dryfruitspng/walnut1.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposes Lorem Ipsum dummy text for printing industry..More text for demonstration purposes .</p>
+        
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="box">
+        <img src="dryfruitspng/image 7.png" class="customer" />
+        <img src="dryfruitspng/almond2.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposesMore textLorem Ipsum dummy text for printing industry.  for demonstration purposes . .</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 8.png" class="customer" />
+        <img src="dryfruitspng/walnut1.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposes More text Lorem Ipsum dummy text for printing industry.for demonstration purposes ..</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 4.png" class="customer" />
+        <img src="dryfruitspng/cashew.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposes More textLorem Ipsum dummy text for printing industry. for demonstration purposes . .</p>
+      </div>
+    </div>
+  </div>
 
-      @keyframes slide-right {
-        0% {
-          transform: translateX(-50%);
-        }
-        100% {
-          transform: translateX(0);
-        }
-      }
-
-      .animate-slide-left {
-        animation: slide-left 40s linear infinite;
-      }
-
-      .animate-slide-right {
-        animation: slide-right 40s linear infinite;
-      }
-    </style>
+  <!-- Bottom Row: Right → Left (with distance from top row) -->
+  <div class="scroll-container loop-box-section bottom-row">
+    <div class="scroll-track animate-right">
+      <div class="box">
+        <img src="dryfruitspng/image 5.png" class="customer" />
+        <img src="dryfruitspng/walnut1.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>Bottom row example text More text forLorem Ipsum dummy text for printing industry. demonstration purposes ..</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 6.png" class="customer" />
+        <img src="dryfruitspng/cashew.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>Lorem Ipsum dummy text for printing Lorem Ipsum dummy text for printing industry.industry.More text for demonstration purposes .</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 7.png" class="customer" />
+        <img src="dryfruitspng/almond2.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>Another customer-product example text.More Lorem Ipsum dummy text for printing industry.ext for demonstration purposes .</p>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="box">
+        <img src="dryfruitspng/image 8.png" class="customer" />
+        <img src="dryfruitspng/walnut1.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>Bottom row example text. More text forLorem Ipsum dummy text for printing industry. demonstration purposes .</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 4.png" class="customer" />
+        <img src="dryfruitspng/cashew.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposesLorem Ipsum dummy text for printing industry. More text for demonstration purposes ..</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 5.png" class="customer" />
+        <img src="dryfruitspng/almond2.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposesLorem Ipsum dummy text for printing industry. More text for demonstration purposes . .</p>
+      </div>
+      <div class="box">
+        <img src="dryfruitspng/image 6.png" class="customer" />
+        <img src="dryfruitspng/cashew.png" class="product" />
+        <h1 class="pt-12 mb-0 text-2xl pl-4 ">
+  Name
+</h1>
+        <p>More text for demonstration purposes More Lorem Ipsum dummy text for printing industry.text for demonstration purposes . .</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="max-w-5xl mx-auto py-0 px-4 rounded-lg space-y-8">
   <!-- Title -->
@@ -1142,10 +990,12 @@ showSlide(currentIndex);
         <h3 class="text-lg font-semibold text-white mb-3">Social Media</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="#" class="hover:text-gray-100">Facebook</a></li>
-          <li><a href="#" class="hover:text-gray-100">Twitter</a></li>
+          <!-- <li><a href="#" class="hover:text-gray-100">Twitter</a></li> -->
           <li><a href="#" class="hover:text-gray-100">Instagram</a></li>
-          <li><a href="#" class="hover:text-gray-100">LinkedIn</a></li>
+          <li><a href="#" class="hover:text-gray-100">TikTOK</a></li>
           <li><a href="#" class="hover:text-gray-100">YouTube</a></li>
+          <li><a href="#" class="hover:text-gray-100">LinkedIn</a></li>
+
         </ul>
       </div>
     </div>
