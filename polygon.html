@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partnership Section</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      section.partnership {
+        padding: 60px 0;
+      }
+
+      .partnership h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000;
+        margin-left: 80px;
+      }
+
+      /* Main box */
+      .partner-box {
+        position: relative;
+        max-width: 1100px;
+        margin: 40px auto;
+        background: linear-gradient(to right, #5b5d61, #5e5f60);
+        color: white;
+        padding: 60px 80px 140px 80px;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 85%, 0% 100%);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .partner-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      /* Left image */
+      .partner-image img {
+        width: 220px;
+        border-radius: 10px;
+        transform: rotate(-2deg);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+      }
+
+      /* Right text */
+      .partner-text {
+        flex: 1;
+        margin-left: 30px;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #f3f3f3;
+      }
+
+      /* Bottom logos inside box */
+      .partner-logos {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+      }
+
+      .partner-logos img {
+        width: 70px;
+        height: auto;
+        transition: transform 0.3s;
+      }
+
+      .partner-logos img:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .partner-box {
+          padding: 40px 30px 120px;
+        }
+
+        .partner-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .partner-text {
+          margin-left: 0;
+          margin-top: 20px;
+        }
+
+        .partner-logos {
+          bottom: 20px;
+          gap: 30px;
+        }
+
+        .partner-logos img {
+          width: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ✅ Partnership Section -->
+    <section class="partnership">
+      <h2>Partnership</h2>
+
+      <div class="partner-box">
+        <div class="partner-content">
+          <!-- Left Image -->
+          <div class="partner-image">
+            <img
+              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=60"
+              alt="Partner"
+            />
+          </div>
+
+          <!-- Right Text -->
+          <div class="partner-text">
+            <p>
+              Lorem ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Logos Inside the Box -->
+        <div class="partner-logos">
+          <img src="dryfruitspng/image 24.png" alt="Logo 1" />
+          <img src="dryfruitspng/image 26.png" alt="Logo 2" />
+          <img src="dryfruitspng/image 25.png" alt="Logo 3" />
+          <img src="dryfruitspng/image 27.png" alt="Logo 4" />
+          <img src="dryfruitspng/image 28.png" alt="Logo 5" />
+          <img src="dryfruitspng/image 29.png" alt="Logo 6" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
